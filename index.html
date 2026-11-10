@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Davinci Mebel — шоурум мебели, Шота Руставели 73, Ташкент</title>
+<meta name="description" content="Davinci Mebel, Ташкент: спальни и мягкая мебель премиум-сегмента. Шоурум на Шота Руставели, 73, с 10:00 до 19:00.">
+<meta name="theme-color" content="#24211E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2324211E'/%3E%3Cpath d='M18 18h12c10 0 17 6 17 14s-7 14-17 14H18z' fill='none' stroke='%23F2EDE4' stroke-width='4'/%3E%3Cpath d='M18 50h29' stroke='%23B48F5A' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Commissioner:wght@300;400;500;600&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="preload" as="image" href="img/DdYTpo7DWt5_1.jpg">
+</head>
+<body>
+<a class="skip" href="#modeli" data-i18n="skip">Перейти к моделям</a>
+
+<header class="top" id="top">
+  <a class="brand" href="#zal" aria-label="Davinci Mebel">
+    <span class="brand__word">DAVINCI</span>
+    <span class="brand__sub" data-i18n="brandSub">мебель · Ташкент</span>
+  </a>
+  <nav class="top__nav" aria-label="Разделы">
+    <a href="#modeli" data-i18n="navModels">Модели</a>
+    <a href="#komplekt" data-i18n="navSet">Узнать цену</a>
+    <a href="#klienty" data-i18n="navClients">У клиентов</a>
+    <a href="#showroom" data-i18n="navShowroom">Шоурум</a>
+  </nav>
+  <div class="top__right">
+    <a class="top__phone" href="tel:+998990200101">+998 99 020 01 01</a>
+    <div class="lang" role="group" aria-label="Язык / Til">
+      <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+      <button type="button" data-lang="uz" aria-pressed="false">UZ</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- 3D virtual showroom -->
+<section class="hall" id="zal" aria-label="Виртуальный зал">
+  <div class="hall__stage">
+    <img class="hall__still" id="hallStill" src="img/DdYTpo7DWt5_1.jpg" alt="" width="720" height="960">
+    <canvas class="hall__canvas" id="hallCanvas" aria-hidden="true"></canvas>
+
+    <div class="hall__intro" id="hallIntro">
+      <h1 data-i18n="h1">Спальни и мягкая мебель премиум-сегмента</h1>
+      <p data-i18n="lead">Бренд с 10-летним опытом. Листайте вниз и идите по залу: в каждом проёме модель, которую можно увидеть вживую на Шота Руставели, 73.</p>
+    </div>
+
+    <div class="hall__rooms" role="group" aria-label="Залы">
+      <button type="button" data-jump="0" data-i18n="roomBed">Спальни</button>
+      <button type="button" data-jump="6" data-i18n="roomLiving">Гостиная</button>
+      <button type="button" data-jump="7" data-i18n="roomShowroom">Шоурум</button>
+    </div>
+
+    <ol class="hall__rail" id="hallRail" aria-label="Проёмы зала"></ol>
+
+    <div class="hall__hud" id="hallHud" aria-live="polite">
+      <div class="hud__meta"><span id="hudIdx">1 / 8</span><span id="hudRoom"></span><a class="hall__skip" href="#modeli" data-i18n="hallSkip">Все модели списком</a></div>
+      <p class="hud__name" id="hudName">GRAF</p>
+      <p class="hud__fact" id="hudFact"></p>
+      <div class="hud__act">
+        <button type="button" class="btn btn--solid" id="hudOpen" data-i18n="hudOpen">Смотреть модель</button>
+        <button type="button" class="btn btn--ghost" id="hudPrice" data-i18n="hudPrice">Узнать цену</button>
+      </div>
+      <div class="hud__step">
+        <button type="button" class="step" id="hudPrev" aria-label="Назад"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button type="button" class="step" id="hudNext" aria-label="Дальше"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Catalog -->
+<section class="sec models" id="modeli">
+  <div class="sec__head">
+    <h2 data-i18n="modelsH">Модели в шоуруме</h2>
+    <p data-i18n="modelsP">Названия, материалы и механизмы взяты из описаний бренда. Цену большинства моделей называют по запросу: она зависит от состава комплекта.</p>
+  </div>
+  <div class="filters" role="group" aria-label="Фильтр">
+    <button type="button" data-f="all" aria-pressed="true" data-i18n="fAll">Все</button>
+    <button type="button" data-f="bed" aria-pressed="false" data-i18n="fBed">Спальни</button>
+    <button type="button" data-f="living" aria-pressed="false" data-i18n="fLiving">Гостиная и диваны</button>
+    <button type="button" data-f="client" aria-pressed="false" data-i18n="fClient">Есть фото у клиента</button>
+  </div>
+  <ul class="grid" id="grid"></ul>
+</section>
+
+<!-- Materials -->
+<section class="sec craft" id="material">
+  <figure class="craft__fig tilt" data-tilt>
+    <img src="media/p/DZb9aW_DSah_3.jpg" alt="" loading="lazy" width="1080" height="1440" data-alt="craftAlt">
+    <span class="tilt__light" aria-hidden="true"></span>
+  </figure>
+  <div class="craft__body">
+    <h2 data-i18n="craftH">Из чего собраны модели</h2>
+    <p class="craft__note" data-i18n="craftNote">Только то, что бренд сам указывает в описаниях моделей.</p>
+    <dl class="facts" id="facts"></dl>
+  </div>
+</section>
+
+<!-- Set builder / price request -->
+<section class="sec set" id="komplekt">
+  <div class="sec__head">
+    <h2 data-i18n="setH">Соберите комплект и узнайте цену</h2>
+    <p data-i18n="setP">Отметьте модель и предметы. Мы составим сообщение, а вы отправите его в Direct или позвоните.</p>
+  </div>
+  <div class="set__wrap">
+    <form class="form" id="setForm" autocomplete="on">
+      <label class="field">
+        <span data-i18n="fModel">Модель</span>
+        <select id="setModel"></select>
+      </label>
+      <fieldset class="field">
+        <legend data-i18n="fItems">Что входит</legend>
+        <div class="checks" id="setItems"></div>
+      </fieldset>
+      <fieldset class="field">
+        <legend data-i18n="fExtra">Дополнительно</legend>
+        <div class="checks">
+          <label class="chk"><input type="checkbox" id="optColor"><span data-i18n="optColor">Нужен другой цвет или размер</span></label>
+          <label class="chk"><input type="checkbox" id="optMeasure"><span data-i18n="optMeasure">Хочу обсудить замер комнаты</span></label>
+          <label class="chk"><input type="checkbox" id="optDelivery"><span data-i18n="optDelivery">Интересует доставка и сборка</span></label>
+        </div>
+      </fieldset>
+      <div class="field2">
+        <label class="field"><span data-i18n="fName">Имя</span><input id="setName" type="text" autocomplete="name"></label>
+        <label class="field"><span data-i18n="fPhone">Телефон</span><input id="setPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+998"></label>
+      </div>
+      <label class="field"><span data-i18n="fNote">Комментарий</span><textarea id="setNote" rows="2"></textarea></label>
+    </form>
+    <aside class="msg" aria-live="polite">
+      <p class="msg__label" data-i18n="msgLabel">Ваше сообщение</p>
+      <pre class="msg__text" id="setMsg"></pre>
+      <div class="acts" data-acts="set"></div>
+    </aside>
+  </div>
+</section>
+
+<!-- Client homes -->
+<section class="sec clients" id="klienty">
+  <div class="sec__head">
+    <h2 data-i18n="clientsH">Как это выглядит у клиентов</h2>
+    <p data-i18n="clientsP">Видео и фото из квартир, куда бренд поставил мебель.</p>
+  </div>
+  <ul class="reel" id="reel"></ul>
+</section>
+
+<!-- Showroom -->
+<section class="sec showroom" id="showroom">
+  <div class="showroom__media">
+    <video id="locVideo" muted playsinline loop preload="none" poster="media/hl/h00_00.jpg">
+      <source src="media/hl/h00_00.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="showroom__body">
+    <h2 data-i18n="showH">Приходите в шоурум</h2>
+    <p class="open" id="openNow"></p>
+    <dl class="addr">
+      <div><dt data-i18n="addrT">Адрес</dt><dd><span data-i18n="addr">Ташкент, ул. Шота Руставели, 73</span><br><a href="https://yandex.uz/maps/?text=%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A8%D0%BE%D1%82%D0%B0%20%D0%A0%D1%83%D1%81%D1%82%D0%B0%D0%B2%D0%B5%D0%BB%D0%B8%2C%2073" target="_blank" rel="noopener" data-i18n="mapLink">Открыть на карте</a></dd></div>
+      <div><dt data-i18n="hoursT">Время работы</dt><dd>10:00–19:00</dd></div>
+      <div><dt data-i18n="phonesT">Телефоны</dt><dd><a href="tel:+998990200101">+998 99 020 01 01</a><br><a href="tel:+998958840101">+998 95 884 01 01</a><br><a href="tel:+998983023023">+998 98 302 30 23</a></dd></div>
+      <div><dt data-i18n="catT">Каталог и цены</dt><dd><a href="https://t.me/davincimebel" target="_blank" rel="noopener">t.me/davincimebel</a></dd></div>
+    </dl>
+
+    <form class="visit" id="visitForm">
+      <p class="visit__h" data-i18n="visitH">Записаться на визит</p>
+      <div class="days" id="visitDays" role="radiogroup" aria-label="День"></div>
+      <div class="times" id="visitTimes" role="radiogroup" aria-label="Время"></div>
+      <div class="field2">
+        <label class="field"><span data-i18n="fName">Имя</span><input id="visitName" type="text" autocomplete="name"></label>
+        <label class="field"><span data-i18n="fWant">Что хотите посмотреть</span><select id="visitModel"></select></label>
+      </div>
+      <pre class="msg__text msg__text--light" id="visitMsg"></pre>
+      <div class="acts" data-acts="visit"></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <span class="brand__word">DAVINCI</span>
+  <p><a href="https://www.instagram.com/mebeldavinci/" target="_blank" rel="noopener">Instagram @mebeldavinci</a> <a href="https://t.me/davincimebel" target="_blank" rel="noopener">Telegram</a></p>
+  <p class="foot__concept" data-i18n="concept">Концепт сайта · Lumagen</p>
+</footer>
+
+<!-- Model sheet -->
+<dialog class="sheet" id="sheet" aria-labelledby="sheetName">
+  <div class="sheet__in">
+    <button type="button" class="sheet__x" id="sheetClose" aria-label="Закрыть"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="sheet__galwrap">
+      <div class="sheet__gal" id="sheetGal"></div>
+      <span class="gal-count" id="galCount"></span>
+      <div class="gal-nav"><button type="button" class="step" id="galPrev" aria-label="Назад"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><button type="button" class="step" id="galNext" aria-label="Дальше"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button></div>
+    </div>
+    <div class="sheet__body">
+      <p class="sheet__room" id="sheetRoom"></p>
+      <h2 class="sheet__name" id="sheetName"></h2>
+      <dl class="sheet__facts" id="sheetFacts"></dl>
+      <div class="sheet__price" id="sheetPrice"></div>
+      <div class="sheet__act">
+        <button type="button" class="btn btn--solid" id="sheetAsk" data-i18n="hudPrice">Узнать цену</button>
+        <button type="button" class="btn btn--line" id="sheetVisit" data-i18n="sheetVisit">Посмотреть в шоуруме</button>
+      </div>
+      <p class="sheet__src" id="sheetSrc"></p>
+    </div>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>
